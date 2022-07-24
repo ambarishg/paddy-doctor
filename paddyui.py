@@ -8,12 +8,12 @@ from msrest.authentication import ApiKeyCredentials
 import os, time, uuid
 
 # Replace with valid values
-ENDPOINT = "https://eastus.api.cognitive.microsoft.com/"
-training_key = "17eebfa6efd94be791052ff85de02409"
-prediction_key = "17eebfa6efd94be791052ff85de02409"
-prediction_resource_id = "paddy"
-project_id = "2f447d24-e99b-4e72-83be-08467a43d4d0"
-publish_iteration_name = "paddy_model"
+ENDPOINT = "YOUR ENDPOINT"
+training_key = "YOUR training_key"
+prediction_key = "YOUR prediction_key"
+prediction_resource_id = "YOUR prediction_resource_id"
+project_id = "YOUR project_id"
+publish_iteration_name = "YOUR publish_iteration_name"
 
 st.title('Welcome To Paddy Doctor')
 instructions = """
