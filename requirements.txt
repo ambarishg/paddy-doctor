@@ -1,0 +1,2 @@
+streamlit 
+azure-cognitiveservices-vision-customvision
