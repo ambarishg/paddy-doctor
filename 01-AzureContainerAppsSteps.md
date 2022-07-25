@@ -48,5 +48,3 @@ az containerapp create \
 --target-port 8501 \
 --ingress 'external' \
 --query configuration.ingress.fqdn
-      
-
