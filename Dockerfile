@@ -4,4 +4,4 @@ WORKDIR /app
 RUN pip install -r requirements.txt --no-cache-dir
 EXPOSE 8501  
 ENTRYPOINT ["streamlit","run"]
-CMD ["paddyui.py"]
+CMD ["paddyui_identity.py"]

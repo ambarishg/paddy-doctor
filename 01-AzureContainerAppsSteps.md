@@ -8,7 +8,7 @@ az provider register --namespace Microsoft.App
 az provider register --namespace Microsoft.OperationalInsights       
 
 RESOURCE_GROUP="paddygroup"         
-LOCATION="canadacentral"                 
+LOCATION="eastus"                 
 CONTAINERAPPS_ENVIRONMENT="paddy-env"  
 
 # Create a Resource Group           
@@ -38,7 +38,7 @@ password=$(az acr credential show --name paddyacr --query passwords[0].value --o
 
 # Create the Container App           
 az containerapp create \
---name redwineapp \
+--name paddyapp \
 --resource-group $RESOURCE_GROUP \
 --environment $CONTAINERAPPS_ENVIRONMENT \
 --image paddyacr.azurecr.io/paddy:v1  \
@@ -47,4 +47,5 @@ az containerapp create \
 --registry-password $password  \
 --target-port 8501 \
 --ingress 'external' \
+--cpu 1.0 --memory 2.0Gi \
 --query configuration.ingress.fqdn
