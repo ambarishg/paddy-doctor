@@ -11,7 +11,8 @@ import os, time, uuid
 from azure.identity import ManagedIdentityCredential
 from azure.keyvault.secrets import SecretClient
 
-KVUri = "https://paddykv01.vault.azure.net/"
+keyVaultName = "paddykv01"
+KVUri = f"https://{keyVaultName}.vault.azure.net"
 
 
 credential = ManagedIdentityCredential()
