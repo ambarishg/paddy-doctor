@@ -10,6 +10,7 @@ az provider register --namespace Microsoft.OperationalInsights
 RESOURCE_GROUP="paddygroup"         
 LOCATION="eastus"                 
 CONTAINERAPPS_ENVIRONMENT="paddy-env"  
+KEY_VAULT_NAME="paddykv01"
 
 # Create a Resource Group           
 az group create --name $RESOURCE_GROUP --location $LOCATION
@@ -48,4 +49,6 @@ az containerapp create \
 --target-port 8501 \
 --ingress 'external' \
 --cpu 1.0 --memory 2.0Gi \
---query configuration.ingress.fqdn
+--query configuration.ingress.fqdn \
+--secrets "kvname-secret=$KEY_VAULT_NAME" \
+--env-vars "kvname=secretref:kvname-secret"

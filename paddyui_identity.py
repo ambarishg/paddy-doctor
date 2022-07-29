@@ -11,7 +11,7 @@ import os, time, uuid
 from azure.identity import ManagedIdentityCredential
 from azure.keyvault.secrets import SecretClient
 
-keyVaultName = "paddykv01"
+keyVaultName = os.environ["kvname"] #""
 KVUri = f"https://{keyVaultName}.vault.azure.net"
 
 
