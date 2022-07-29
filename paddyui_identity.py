@@ -39,9 +39,10 @@ if uploaded_file is not None:
     image_binary =  Image.open((uploaded_file)) 
     resized_image = image_binary.resize((336, 336))
     imgWidth, imgHeight = image_binary.size 
+    
     draw = ImageDraw.Draw(image_binary) 
     st.image(resized_image)
-
+    
      # To read file as bytes:
     bytes_data = uploaded_file.getvalue()
      
@@ -53,6 +54,7 @@ if uploaded_file is not None:
     results = predictor.classify_image(
             project_id, publish_iteration_name, bytes_data)
 
+    st.write("The paddy leaf image predictions are")
         # Display the results.
     for prediction in results.predictions:
             st.write("\t" + prediction.tag_name +
