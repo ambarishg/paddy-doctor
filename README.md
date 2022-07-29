@@ -7,5 +7,9 @@ Also refer the article [Paddy Disease Classification using Azure AI](https://dev
 1. Create a KeyVault in Azure    
 2. Add all the secrets in the KeyVault [ **key-vault-secrets.png** ]        
 3. Add System Assigned Identity flag on in the Container App. Refer the image **paddy-system-assigned-identity.png** on how this is done     
-4. The **paddyui_identity** has the implementation details of the code for System Assigned Identity         
+4. The **paddyui_identity** has the implementation details of the code for System Assigned Identity 
+
+The KeyVault URL is being stored as **secured environment variable**     
+
+
 
