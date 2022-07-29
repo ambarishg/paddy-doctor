@@ -3,7 +3,7 @@ This is an **Azure Container App** which does **Paddy Disease Classification** u
 Also refer the article [Paddy Disease Classification using Azure AI](https://dev.to/ambarishg/paddy-doctor-paddy-disease-classification-1b7i) for the details of building the Computer Vision Model       
 
 <hr/>
-All screenshots are in the **docs/images** folder 
+All screenshots are in the <b>docs/images</b> folder 
 <hr/>
 
 ## Update -  KeyVault and Secrets support with System Assigned Identity added     
