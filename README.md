@@ -15,5 +15,14 @@ All screenshots are in the <b>docs/images</b> folder
 
 The KeyVault URL is being stored as **secured environment variable**     
 
+The classification model was built on Azure AI. The model was exposed through Streamlit UI and this also used #managedidentity #azurecontainerapps #azurekeyvault.         
+
+This is a good example where we combine a number of #azure services
+#azurecustomvision      
+#azurecontainerapp         
+#azurekeyvault           
+#azuremanagedidentity           
+
+
 
 

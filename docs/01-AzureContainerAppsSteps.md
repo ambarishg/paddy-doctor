@@ -1,3 +1,7 @@
+# Install the Azure Container Apps extension to the CLI.         
+az extension add \
+  --source https://workerappscliextension.blob.core.windows.net/azure-cli-extension/containerapp-0.2.0-py2.py3-none-any.whl      
+  
 # Install the Azure Container Apps extension for the CLI.
 az extension add --name containerapp --upgrade
 
